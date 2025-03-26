@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Hello CI/C !");
+    res.send("Hello CI/CD !");
 });
 
 // Ne démarre pas le serveur directement si c'est un test
