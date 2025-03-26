@@ -18,8 +18,11 @@ jobs:
       - name: Installer les dépendances
         run: npm install --legacy-peer-deps
 
+      - name: Donner des permissions d'exécution à Jest
+        run: chmod +x ./node_modules/.bin/jest
+        
       - name: Installer Jest
-        run: npm install jest
+        run: npm install -g jest
         
       - name: Lancer les tests
         run: npm test
